@@ -33,12 +33,11 @@ main{
 }
 
 
-.step-box:nth-child(2){
-  margin: 0 30px;
+.step-box:nth-child(1), .step-box:nth-child(2){
+  margin-right: 30px;
 }
 
 .common-image {
-  width:280px;
   height:150px;
   margin-bottom: 15px;
 }
@@ -70,5 +69,33 @@ footer{
   width: 100%;
   height:50px;
   background-color: #aaaaaa;
+}
+
+/*メディアクエリの定義*/
+/*768px以下の画面サイズで適用される*/
+@media screen and (max-width:768px) {
+  header{
+    width:100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .step-box {
+    width:90%;
+    margin: 0 5%;
+  }
+
+  .step-box:nth-child(1), .step-box:nth-child(2){
+    margin: 0 5% 20px;
+  }
+
+  footer{
+    width: 100%;
+    
+  }
+
 }
 
